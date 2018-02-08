@@ -1,0 +1,28 @@
+{
+  "name": "knot-kegerator-backend",
+  "version": "0.0.1",
+  "description": "Kegerator backend",
+  "repository": "git@github.com:cesarbr/knot-kegerator-backend",
+  "license": "BSD-3-Clause",
+  "private": false,
+  "scripts": {
+    "lint": "eslint .",
+    "build": "babel src --out-dir bin",
+    "test": "babel-tape-runner test/**/*.js",
+    "start": "node bin"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-tape-runner": "^2.0.1",
+    "eslint": "^4.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "pre-commit": "^1.2.2",
+    "tape": "^4.8.0"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
