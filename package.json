@@ -28,5 +28,10 @@
   "pre-commit": [
     "lint",
     "test"
-  ]
+  ],
+  "dependencies": {
+    "joi": "^12.0.0",
+    "tape-around": "^2.2.0",
+    "sinon": "^4.3.0"
+  }
 }
