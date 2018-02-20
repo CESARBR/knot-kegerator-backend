@@ -32,6 +32,8 @@
   "dependencies": {
     "joi": "^17.2.0",
     "tape-around": "^2.2.0",
-    "sinon": "^4.3.0"
+    "sinon": "^4.3.0",
+    "meshblu": "^3.0.5",
+    "uuid": "^3.2.1"
   }
 }
