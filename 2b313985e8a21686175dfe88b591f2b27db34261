@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5c999ce2_696691d4",
+        "filename": "package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-23T14:21:08Z",
+      "side": 1,
+      "message": "Add these dependencies in the commits where you use them. In this patch add only the changes above.",
+      "revId": "2b313985e8a21686175dfe88b591f2b27db34261",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
