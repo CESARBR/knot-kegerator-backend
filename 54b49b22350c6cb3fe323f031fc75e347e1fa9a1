@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "12678808_235e76c4",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T16:57:11Z",
+      "side": 0,
+      "message": "Verify this merge conflict. It shouldn\u0027t be removed in this patch.",
+      "revId": "54b49b22350c6cb3fe323f031fc75e347e1fa9a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

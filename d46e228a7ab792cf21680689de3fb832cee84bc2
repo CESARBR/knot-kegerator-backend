@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7375255a_6b79a91a",
+        "filename": "src/infrastructure/MongoConnection.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T16:57:11Z",
+      "side": 1,
+      "message": "Follow the same I suggested for the CloudConnection:\n- Return a promise resolved on \"connected\" and rejected on \"error\".\n- Create wrappers to access the method you need on the connection.\n- Remove the logs.",
+      "revId": "d46e228a7ab792cf21680689de3fb832cee84bc2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eea0de14_1092a773",
+        "filename": "src/infrastructure/TapSchema.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T16:57:11Z",
+      "side": 1,
+      "message": "waitingSetup will be stored on the cloud. Maybe we can mirror this value on the database, but let\u0027s discuss it in the next story. For now, remove.",
+      "revId": "d46e228a7ab792cf21680689de3fb832cee84bc2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6f2d272c_5cf736db",
+        "filename": "src/infrastructure/TapSchema.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T16:57:11Z",
+      "side": 1,
+      "message": "Volume will be stored on the cloud.",
+      "revId": "d46e228a7ab792cf21680689de3fb832cee84bc2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
