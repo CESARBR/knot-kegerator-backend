@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "89cc1424_3e6d14fd",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T13:54:17Z",
+      "side": 1,
+      "message": "Pass the parameters directly instead of making CloudConnection depend on Company.",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "59e6304b_71e214fd",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T13:54:17Z",
+      "side": 1,
+      "message": "`start()` is actually working as a connection factory. I would expect to use the object I created instead of one returned by `start()`, e.g.:\n\n```\nconst connection \u003d new Connection();\nconnection.start();\nconst module \u003d new Module(connection);\n```\n\nTo make this change you\u0027ll need to transform this CloudConnection in a proxy to MeshbluSocketIO, e.g. expose a `on()` method that will call `this.connection.on()`.",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ba51e67_10ae1b91",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T13:54:17Z",
+      "side": 1,
+      "message": "Remove the logs. Let who uses the connection decide when and if log anything.",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "60c09e85_cbe9eb41",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T13:54:17Z",
+      "side": 1,
+      "message": "Make `start()` return a promise that will be resolved on `ready` and rejected on `notReady`.",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3cfa9dce_92a6db5c",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T13:54:17Z",
+      "side": 1,
+      "message": "As I mentioned in the other review, use data related names in the Store. This could be `update()`.",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a8c24809_572a0588",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T13:54:17Z",
+      "side": 1,
+      "message": "Don\u0027t log here. Return a promise and let who use the store decide if should log or not.",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

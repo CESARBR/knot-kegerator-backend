@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae9eb84_f9850306",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T13:54:17Z",
+      "side": 0,
+      "message": "This shouldn\u0027t be removed in this patch. Verify if the parent commit has merge conflicts and remove there.",
+      "revId": "db71eb71be3d0195c0f0b7f5225f6e38c09f5999",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eb57879b_76dc199d",
+        "filename": "test/interactors/SetupTap.spec.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T13:54:17Z",
+      "side": 0,
+      "message": "Same here.",
+      "revId": "db71eb71be3d0195c0f0b7f5225f6e38c09f5999",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
