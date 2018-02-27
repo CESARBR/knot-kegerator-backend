@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "66a7f661_45083b4f",
+        "filename": "src/infrastructure/HapiServer.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T17:38:19Z",
+      "side": 1,
+      "message": "Remove \"Hapi\", no need to say the tech we are using.",
+      "revId": "c9687b3b7a29a05d0066c01f6c1f5895bcfde8b2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "06868baf_ea9ddcb5",
+        "filename": "src/infrastructure/HapiServer.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-02-27T17:38:19Z",
+      "side": 1,
+      "message": "Move this to a method.",
+      "revId": "c9687b3b7a29a05d0066c01f6c1f5895bcfde8b2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
