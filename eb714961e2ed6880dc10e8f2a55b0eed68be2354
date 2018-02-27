@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "4259a2dc_41d48135",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-27T23:57:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "034048fd_713a1d9f",
+      "revId": "eb714961e2ed6880dc10e8f2a55b0eed68be2354",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1d6a45dc_f58ab76e",
         "filename": "src/interactors/SetupTap.js",
         "patchSetId": 5
@@ -30,6 +48,24 @@
       "writtenOn": "2018-02-27T13:49:22Z",
       "side": 1,
       "message": "\"Tap isn\u0027t ...\"",
+      "revId": "eb714961e2ed6880dc10e8f2a55b0eed68be2354",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d81e770c_bc8b4f2e",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-27T23:57:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1d6a45dc_f58ab76e",
       "revId": "eb714961e2ed6880dc10e8f2a55b0eed68be2354",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -71,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "a5ed65e0_36819843",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-27T23:57:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4bd7e121_151ad776",
+      "revId": "eb714961e2ed6880dc10e8f2a55b0eed68be2354",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4287e21a_3c729ba6",
         "filename": "src/interactors/SetupTap.js",
         "patchSetId": 5
@@ -82,6 +136,24 @@
       "writtenOn": "2018-02-27T13:49:22Z",
       "side": 1,
       "message": "The `setupTap` logic should be in this class. Think of store containing only data(-base) operations, such as create, update, get and delete.",
+      "revId": "eb714961e2ed6880dc10e8f2a55b0eed68be2354",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b7a7e120_834f3440",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-27T23:57:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4287e21a_3c729ba6",
       "revId": "eb714961e2ed6880dc10e8f2a55b0eed68be2354",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -105,6 +177,24 @@
     },
     {
       "key": {
+        "uuid": "6914c08d_c5a92589",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-27T23:57:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "486ffbc5_97bf60a5",
+      "revId": "eb714961e2ed6880dc10e8f2a55b0eed68be2354",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6fe81a0a_936f3940",
         "filename": "test/interactors/SetupTap.spec.js",
         "patchSetId": 5
@@ -116,6 +206,24 @@
       "writtenOn": "2018-02-27T13:49:22Z",
       "side": 1,
       "message": "Changes suggested in SetupTap will reflect in this file.",
+      "revId": "eb714961e2ed6880dc10e8f2a55b0eed68be2354",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d1e7c51d_51deaf01",
+        "filename": "test/interactors/SetupTap.spec.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-27T23:57:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6fe81a0a_936f3940",
       "revId": "eb714961e2ed6880dc10e8f2a55b0eed68be2354",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
