@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0e922b35_cf79680f",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-27T16:28:05Z",
+      "side": 1,
+      "message": "In this function I intend to verify the Tap setup status by receiving this data from the Cloud Store. I would like throw the errors in this function and handle it in the endpoint handler on server, but these errors are thrown in the callback that receives the data.\n\nBecause it is asynchronous, my try/catch block on server cannot catch it.\n\nAny suggestion of how I can better control this?",
+      "revId": "80ee85a468409de6c03339455515c7a59d17e4ae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
