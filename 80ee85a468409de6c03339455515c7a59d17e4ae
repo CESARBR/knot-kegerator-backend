@@ -16,6 +16,24 @@
       "revId": "80ee85a468409de6c03339455515c7a59d17e4ae",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4848f741_193dc2a9",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-27T16:31:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0e922b35_cf79680f",
+      "revId": "80ee85a468409de6c03339455515c7a59d17e4ae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
