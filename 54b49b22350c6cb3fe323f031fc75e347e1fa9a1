@@ -16,6 +16,24 @@
       "revId": "54b49b22350c6cb3fe323f031fc75e347e1fa9a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6e3beea5_a91aeb8b",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T03:37:09Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "12678808_235e76c4",
+      "revId": "54b49b22350c6cb3fe323f031fc75e347e1fa9a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }

@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "4d268cb9_728c91b3",
+        "filename": "src/infrastructure/MongoConnection.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T03:37:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7375255a_6b79a91a",
+      "revId": "d46e228a7ab792cf21680689de3fb832cee84bc2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "eea0de14_1092a773",
         "filename": "src/infrastructure/TapSchema.js",
         "patchSetId": 4
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "784713ab_2b464348",
+        "filename": "src/infrastructure/TapSchema.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T03:37:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eea0de14_1092a773",
+      "revId": "d46e228a7ab792cf21680689de3fb832cee84bc2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6f2d272c_5cf736db",
         "filename": "src/infrastructure/TapSchema.js",
         "patchSetId": 4
@@ -47,6 +83,24 @@
       "writtenOn": "2018-02-27T16:57:11Z",
       "side": 1,
       "message": "Volume will be stored on the cloud.",
+      "revId": "d46e228a7ab792cf21680689de3fb832cee84bc2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d0c05b1f_e871196a",
+        "filename": "src/infrastructure/TapSchema.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T03:37:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f2d272c_5cf736db",
       "revId": "d46e228a7ab792cf21680689de3fb832cee84bc2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
