@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "43fff778_702986d7",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T00:11:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "89cc1424_3e6d14fd",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "59e6304b_71e214fd",
         "filename": "src/infrastructure/CloudConnection.js",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2018-02-27T13:54:17Z",
       "side": 1,
       "message": "`start()` is actually working as a connection factory. I would expect to use the object I created instead of one returned by `start()`, e.g.:\n\n```\nconst connection \u003d new Connection();\nconnection.start();\nconst module \u003d new Module(connection);\n```\n\nTo make this change you\u0027ll need to transform this CloudConnection in a proxy to MeshbluSocketIO, e.g. expose a `on()` method that will call `this.connection.on()`.",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "29ceac89_85062737",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T00:11:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "59e6304b_71e214fd",
       "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "566d4bec_ed267377",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T00:11:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5ba51e67_10ae1b91",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "60c09e85_cbe9eb41",
         "filename": "src/infrastructure/CloudConnection.js",
         "patchSetId": 3
@@ -64,6 +118,24 @@
       "writtenOn": "2018-02-27T13:54:17Z",
       "side": 1,
       "message": "Make `start()` return a promise that will be resolved on `ready` and rejected on `notReady`.",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "50df3cf7_db8f8343",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T00:11:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "60c09e85_cbe9eb41",
       "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "2a82c8e5_120fbf41",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T00:11:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3cfa9dce_92a6db5c",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a8c24809_572a0588",
         "filename": "src/infrastructure/CloudTapStore.js",
         "patchSetId": 3
@@ -98,6 +188,24 @@
       "writtenOn": "2018-02-27T13:54:17Z",
       "side": 1,
       "message": "Don\u0027t log here. Return a promise and let who use the store decide if should log or not.",
+      "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1eaccc68_9ed9d563",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T00:11:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8c24809_572a0588",
       "revId": "7f8e4b68d0348a53576ec74bd2adb590e25165c5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false

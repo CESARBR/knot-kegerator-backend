@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "56c9939d_50b12f57",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T00:11:49Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "bae9eb84_f9850306",
+      "revId": "db71eb71be3d0195c0f0b7f5225f6e38c09f5999",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "eb57879b_76dc199d",
         "filename": "test/interactors/SetupTap.spec.js",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2018-02-27T13:54:17Z",
       "side": 0,
       "message": "Same here.",
+      "revId": "db71eb71be3d0195c0f0b7f5225f6e38c09f5999",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "325995bf_23d8e860",
+        "filename": "test/interactors/SetupTap.spec.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-02-28T00:11:49Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "eb57879b_76dc199d",
       "revId": "db71eb71be3d0195c0f0b7f5225f6e38c09f5999",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
