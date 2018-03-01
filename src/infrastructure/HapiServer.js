@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import hapi from 'hapi';
+import Logger from 'infrastructure/Logger';
 
 const DEFAULT_HOST = 'localhost';
 const DEFAULT_PORT = 8080;
@@ -33,9 +34,9 @@ class HapiServer {
     try {
       await server.route(this.createServerRoutes());
       await server.start();
-      console.log(`Server is running at ${server.info.uri}...`);
+      Logger.debug('info', `server is running at ${server.info.uri}...`);
     } catch (e) {
-      console.error(e);
+      Logger.debug('error', e);
     }
   }
 

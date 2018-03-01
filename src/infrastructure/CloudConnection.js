@@ -1,4 +1,5 @@
 import MeshbluSocketIO from 'meshblu';
+import Logger from 'infrastructure/Logger';
 
 class CloudConnection {
   constructor(hostname, port, uuid, token) {
@@ -13,11 +14,19 @@ class CloudConnection {
   }
 
   start() {
+    Logger.debug('info', 'starting cloud connection');
     this.connection.connect();
 
     return new Promise((resolve, reject) => {
-      this.connection.on('ready', () => resolve());
-      this.connection.on('notReady', () => reject());
+      this.connection.on('ready', () => {
+        Logger.debug('info', 'cloud connection established');
+        resolve();
+      });
+
+      this.connection.on('notReady', () => {
+        Logger.debug('error', 'cloud connection not authorized');
+        reject();
+      });
     });
   }
 

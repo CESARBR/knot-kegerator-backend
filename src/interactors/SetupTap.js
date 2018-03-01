@@ -1,3 +1,5 @@
+import Logger from 'infrastructure/Logger';
+
 class SetupTap {
   constructor(mongoStore, cloudStore) {
     this.mongoStore = mongoStore;
@@ -9,12 +11,14 @@ class SetupTap {
     if (!tap.waitingSetup) {
       const error = new Error('Tap isn\'t in setup mode');
       error.code = 403;
+      Logger.debug('error', error);
       throw error;
     }
 
     tap = await this.mongoStore.getTap(setup.id);
     if (!tap.setup.client.id || !tap.setup.beer.id || !tap.setup.keg.id) {
       const error = new Error('ValidationError');
+      Logger.debug('error', error);
       throw error;
     }
 

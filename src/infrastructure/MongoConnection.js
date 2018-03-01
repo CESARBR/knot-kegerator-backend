@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import Logger from 'infrastructure/Logger';
 
 class MongoConnection {
   constructor(dbServer, dbName) {
@@ -7,11 +8,18 @@ class MongoConnection {
   }
 
   start() {
+    Logger.debug('info', 'starting mongo connection');
     this.mongoose.connect(this.dbURL);
 
     return new Promise((resolve, reject) => {
-      this.mongoose.connection.on('connected', () => resolve());
-      this.mongoose.connection.on('error', err => reject(err));
+      this.mongoose.connection.on('connected', () => {
+        Logger.debug('info', 'mongo connection established');
+        resolve();
+      });
+      this.mongoose.connection.on('error', (err) => {
+        Logger.debug('error', 'mongo connection failed');
+        reject(err);
+      });
     });
   }
 
