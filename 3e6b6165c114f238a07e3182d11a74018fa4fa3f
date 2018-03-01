@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "89f934ae_3a8350c7",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 7
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T19:46:38Z",
+      "side": 1,
+      "message": "This id can point to an invalid entity, even if a valid UUID. You need to test it as well.",
+      "revId": "3e6b6165c114f238a07e3182d11a74018fa4fa3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "836750d1_4cedcf7e",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 7
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T19:46:38Z",
+      "side": 1,
+      "message": "These ids are valid or empty (when the tap is created they will be empty). What we need to validate is if the `setup.clientId`, `setup.beerId` and `setup.kegId` point to valid entities, i.e., you\u0027ll need to get them from their store and test if they exist.",
+      "revId": "3e6b6165c114f238a07e3182d11a74018fa4fa3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
