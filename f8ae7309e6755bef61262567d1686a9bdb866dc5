@@ -101,6 +101,24 @@
       "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cd93b97b_58c0ea6d",
+        "filename": "test/infrastructure/TapStore.spec.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:20:50Z",
+      "side": 1,
+      "message": "Ignore this for now, follow the same I suggested for the `CloudTapStore`, create tests that validate the interaction between `TapStore` and `MongoConnection` so that we don\u0027t need to have a database configured.",
+      "parentUuid": "6021b719_13da14c9",
+      "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
