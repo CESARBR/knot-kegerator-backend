@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "103442e5_92dc8a2f",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T19:46:38Z",
+      "side": 1,
+      "message": "You need to verify if the tap exists before dealing with it. I suggest to throw another exception if it doesn\u0027t, it could be `EntityNotFoundError`.\n\nIn the server you translate EntityNotFound to 404.",
+      "revId": "bb7656d99903667967c5695d7f96382e071882d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6b2bdb7f_7e73af4b",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T19:46:38Z",
+      "side": 1,
+      "message": "403 code is infrastructure specific. Let\u0027s create an error such as the `InvalidStateError` (control) to throw here. This case can actually be `InvalidStateError` as well.\n\nThen in the server you have a method to translate InvalidStateError to 403.",
+      "revId": "bb7656d99903667967c5695d7f96382e071882d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8aabe6f3_31d5b3db",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T19:46:38Z",
+      "side": 1,
+      "message": "The emptiness validation is already being made in the request validator. What we need here is to fetch the entities from the store and throw an error if they don\u0027t exist.\n\nI improved the endpoint documentation with an specification of what to throw on validation failure. My suggestion is to create a `ValidationError` type containing what is specified there: message, details, ... to be thrown here.\n\nIn the server you translate ValidationError (and joi errors) to 422.",
+      "revId": "bb7656d99903667967c5695d7f96382e071882d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f7b51e64_3df76f13",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T19:46:38Z",
+      "side": 1,
+      "message": "All validations should be reflected in the tests, i.e., there should be a test for each validation case.",
+      "revId": "bb7656d99903667967c5695d7f96382e071882d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
