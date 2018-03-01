@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f252c303_2cb763b2",
+        "filename": "src/index.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:26:41Z",
+      "side": 1,
+      "message": "Create constants for these values as well. In the next feature we extract a configuration module.",
+      "revId": "06a78eb5e978a2d58f78753196aafc25e84a73f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "63422884_d40f90f8",
+        "filename": "src/index.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:26:41Z",
+      "side": 1,
+      "message": "I just noticed something: these credentials are the company credentials, can we specify them later? i.e. when making the request?",
+      "revId": "06a78eb5e978a2d58f78753196aafc25e84a73f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a1a9cdb_0bcc1e6b",
+        "filename": "src/infrastructure/HapiServer.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:26:41Z",
+      "side": 1,
+      "message": "What does `h` stands for?",
+      "range": {
+        "startLine": 54,
+        "startChar": 33,
+        "endLine": 54,
+        "endChar": 34
+      },
+      "revId": "06a78eb5e978a2d58f78753196aafc25e84a73f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
