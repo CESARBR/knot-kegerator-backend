@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e5280c80_7e4505b6",
+        "filename": "package.json",
+        "patchSetId": 6
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:19:00Z",
+      "side": 1,
+      "message": "Include this only when needed.",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dfdb03f4_414ce4a2",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:19:00Z",
+      "side": 1,
+      "message": "Let\u0027s promisify all these meshblu functions. See https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_promisify_original",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eed9f6cf_5682f050",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:19:00Z",
+      "side": 1,
+      "message": "You can omit the `Tap` suffix here and in `updateTap`",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4deba19c_3610ac86",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:19:00Z",
+      "side": 1,
+      "message": "Is `metadata.setup` the object that is being created by the device?",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "927afc72_5a3ac3f4",
+        "filename": "test/infrastructure/CloudTapStore.spec.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:19:00Z",
+      "side": 1,
+      "message": "This test should validate that `CloudTapStore` is interacting correctly with `CloudConnection`.\n\nMock `CloudConnection` and validate that `CloudTapStore` calls the correct methods in `CloudConnection`. The way it is, we need the cloud to be running and to be in the state described by the test to work, i.e. if it fails, it might not be because `CloudTapStore` is wrong.\n\n`CloudConnection` tests should be the ones interacting with the cloud service, but as it is a wrapper around Meshblu\u0027s library, we don\u0027t need to implement them.",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a8f9d5b7_a5ad0a1e",
+        "filename": "test/infrastructure/CloudTapStore.spec.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:19:00Z",
+      "side": 1,
+      "message": "Create tests for `getTap` too",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
