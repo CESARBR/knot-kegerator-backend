@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c3229ce0_6638cb68",
+        "filename": "src/infrastructure/MongoConnection.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:07:28Z",
+      "side": 1,
+      "message": "I just noticed that `connect()` already returns a promise that when connected, resolves to the mongoose object.\n\nLet\u0027s take a different approach, initialize `this.mongoose` here, with the result of `connect()`. This way if we try to use the other methods without connecting, it will break.\n\nThis approach can also helps us avoid problems with operation buffering: http://mongoosejs.com/docs/connections.html#buffering\n\nChange this method to async and await connect() saving its result in this.mongoose.",
+      "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d238cc23_e37b645b",
+        "filename": "src/infrastructure/MongoConnection.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:07:28Z",
+      "side": 1,
+      "message": "Change it to async and await `disconnect()`",
+      "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5105d95b_f06e66c0",
+        "filename": "src/infrastructure/TapSchema.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:07:28Z",
+      "side": 1,
+      "message": "Can we specify something to say it is a UUID instead of String?",
+      "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da224e82_154eeef4",
+        "filename": "src/infrastructure/TapStore.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:07:28Z",
+      "side": 1,
+      "message": "You can omit the `Tap` suffix (the same for `updateTap`)",
+      "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2303588e_e640e640",
+        "filename": "src/infrastructure/TapStore.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:07:28Z",
+      "side": 1,
+      "message": "Now I saw that you are validating it here. I suggested to validate it in the upper layer and I see this is a bit controversial.\n\nIn the current project, we return `null` when the entity doesn\u0027t exist and leave the domain layer to deal with it appropriately.\n\nI\u0027m not sure about the best approach, but let\u0027s try what you are doing to compare with my current experience. Just change the error as I suggested in the other review. It should be `EntityNotFoundError`. Add two fields to this error: `entity`, the name of the entity, and `id`.\n\nPS: In order to create the validations needed in the domain layer, we\u0027ll need an `exists()` method in the other entities\u0027 store.",
+      "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6021b719_13da14c9",
+        "filename": "test/infrastructure/TapStore.spec.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-01T21:07:28Z",
+      "side": 1,
+      "message": "Add tests to `getTap` as well.\n\nThis test requires the database to be configured. We shouldn\u0027t enforce these to execute every commit. In the `package.json` scripts, split `test` into `test:unit` and `test:unit:infrastructure` and make the commit hook to execute only `test:unit`. This can be done by excluding the `infrastructure` folder or by excluding the individual files in this folder that requires an infrastructure to be up.",
+      "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
