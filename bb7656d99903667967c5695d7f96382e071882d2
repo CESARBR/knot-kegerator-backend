@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "e0f87e85_443278b5",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-02T12:48:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "103442e5_92dc8a2f",
+      "revId": "bb7656d99903667967c5695d7f96382e071882d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6b2bdb7f_7e73af4b",
         "filename": "src/interactors/SetupTap.js",
         "patchSetId": 8
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-01T19:46:38Z",
       "side": 1,
       "message": "403 code is infrastructure specific. Let\u0027s create an error such as the `InvalidStateError` (control) to throw here. This case can actually be `InvalidStateError` as well.\n\nThen in the server you have a method to translate InvalidStateError to 403.",
+      "revId": "bb7656d99903667967c5695d7f96382e071882d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7d085bfe_3f40edde",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-02T12:48:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b2bdb7f_7e73af4b",
       "revId": "bb7656d99903667967c5695d7f96382e071882d2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "f83f78b2_41db7a0c",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-02T12:48:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8aabe6f3_31d5b3db",
+      "revId": "bb7656d99903667967c5695d7f96382e071882d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f7b51e64_3df76f13",
         "filename": "src/interactors/SetupTap.js",
         "patchSetId": 8
@@ -64,6 +118,24 @@
       "writtenOn": "2018-03-01T19:46:38Z",
       "side": 1,
       "message": "All validations should be reflected in the tests, i.e., there should be a test for each validation case.",
+      "revId": "bb7656d99903667967c5695d7f96382e071882d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a494b81b_df43bb2e",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-02T12:48:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f7b51e64_3df76f13",
       "revId": "bb7656d99903667967c5695d7f96382e071882d2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
