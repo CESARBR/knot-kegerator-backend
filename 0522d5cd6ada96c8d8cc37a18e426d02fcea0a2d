@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3b1189f7_faaec0d6",
+        "filename": "package.json",
+        "patchSetId": 6
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-08T23:51:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e5280c80_7e4505b6",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dfdb03f4_414ce4a2",
         "filename": "src/infrastructure/CloudConnection.js",
         "patchSetId": 6
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-01T21:19:00Z",
       "side": 1,
       "message": "Let\u0027s promisify all these meshblu functions. See https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_promisify_original",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d2d07230_1dd2630f",
+        "filename": "src/infrastructure/CloudConnection.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-08T23:51:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dfdb03f4_414ce4a2",
       "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "c7a8e335_08e57323",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-08T23:51:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eed9f6cf_5682f050",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4deba19c_3610ac86",
         "filename": "src/infrastructure/CloudTapStore.js",
         "patchSetId": 6
@@ -64,6 +118,24 @@
       "writtenOn": "2018-03-01T21:19:00Z",
       "side": 1,
       "message": "Is `metadata.setup` the object that is being created by the device?",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "79e1662f_6756a232",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-08T23:51:30Z",
+      "side": 1,
+      "message": "Yes. I\u0027m using the metadata object to storage the entire tap entity and the metadata.setup to storage its setup data. Can I keep this name or better change it to tap?",
+      "parentUuid": "4deba19c_3610ac86",
       "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "ccb9d102_7dcc1596",
+        "filename": "test/infrastructure/CloudTapStore.spec.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-08T23:51:30Z",
+      "side": 1,
+      "message": "Done. I don\u0027t make tests to verify the data returned by `CloudConnection.update()`, since the response is always the same, existing or not a failure.",
+      "parentUuid": "927afc72_5a3ac3f4",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a8f9d5b7_a5ad0a1e",
         "filename": "test/infrastructure/CloudTapStore.spec.js",
         "patchSetId": 6
@@ -98,6 +188,24 @@
       "writtenOn": "2018-03-01T21:19:00Z",
       "side": 1,
       "message": "Create tests for `getTap` too",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "683c210f_f6777892",
+        "filename": "test/infrastructure/CloudTapStore.spec.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-08T23:51:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8f9d5b7_a5ad0a1e",
       "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
