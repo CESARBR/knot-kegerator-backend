@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "649199f1_02898e63",
+        "filename": "src/index.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-09T00:14:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f252c303_2cb763b2",
+      "revId": "06a78eb5e978a2d58f78753196aafc25e84a73f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "63422884_d40f90f8",
         "filename": "src/index.js",
         "patchSetId": 6
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "1a7192f4_815f1dff",
+        "filename": "src/index.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-09T00:14:48Z",
+      "side": 1,
+      "message": "Are you talking about pass these credentials in request headers? I think we could implement a specific endpoint to set the Company credentials later.",
+      "parentUuid": "63422884_d40f90f8",
+      "revId": "06a78eb5e978a2d58f78753196aafc25e84a73f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a1a9cdb_0bcc1e6b",
         "filename": "src/infrastructure/HapiServer.js",
         "patchSetId": 6
@@ -47,6 +83,30 @@
       "writtenOn": "2018-03-01T21:26:41Z",
       "side": 1,
       "message": "What does `h` stands for?",
+      "range": {
+        "startLine": 54,
+        "startChar": 33,
+        "endLine": 54,
+        "endChar": 34
+      },
+      "revId": "06a78eb5e978a2d58f78753196aafc25e84a73f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "76e1da32_239f2e63",
+        "filename": "src/infrastructure/HapiServer.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-09T00:14:48Z",
+      "side": 1,
+      "message": "h stands for a response toolkit.\n\n\"In Hapi v17, the reply interface isn’t available anymore and you can return values from route handlers directly. The response.hold() and response.resume() methods are no longer available. A new response toolkit, h, is provided with helpers(instead of the reply() decorations).\"\n\ne.g.\n\n`function before(request, reply) { ... }`\n\n`function after(request, h) { ... }`\n\nhttps://auth0.com/blog/developing-restful-apis-with-hapijs/",
+      "parentUuid": "5a1a9cdb_0bcc1e6b",
       "range": {
         "startLine": 54,
         "startChar": 33,
