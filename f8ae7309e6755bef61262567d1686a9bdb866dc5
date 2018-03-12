@@ -107,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "06ff8593_a1fca983",
+        "filename": "src/infrastructure/TapSchema.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-12T13:42:52Z",
+      "side": 1,
+      "message": "Nice!",
+      "parentUuid": "536e7e8f_4a03e1d1",
+      "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da224e82_154eeef4",
         "filename": "src/infrastructure/TapStore.js",
         "patchSetId": 6
@@ -171,6 +189,24 @@
       "side": 1,
       "message": "Done. I made changes in domain as well (to add `exists()` calls), so for now the setup just work after implement the other entities domains (client, beer and keg).",
       "parentUuid": "2303588e_e640e640",
+      "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ce535e0b_84c221b9",
+        "filename": "src/infrastructure/TapStore.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-12T13:42:52Z",
+      "side": 1,
+      "message": "setup should work before implementing the other entities domain rules. In this patch set, you need to include an implementation of `exists()` for the client, beer and keg stores.",
+      "parentUuid": "f6d4dc0a_48ab08c0",
       "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
