@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4b77760e_ed37ce5d",
+        "filename": "src/infrastructure/HapiServer.js",
+        "patchSetId": 10
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-12T13:36:14Z",
+      "side": 1,
+      "message": "This will change by creating the `InvalidStateError` class. If I\u0027m not wrong, the way it is written now, what holds \u0027InvalidStateError\u0027 is `err.message` instead of `err.name`",
+      "revId": "c657cbd002defb7c238da1b7aa210bd1141a1cb2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
