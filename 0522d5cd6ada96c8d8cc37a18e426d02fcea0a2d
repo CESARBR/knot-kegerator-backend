@@ -142,6 +142,24 @@
     },
     {
       "key": {
+        "uuid": "67e75a96_388f6086",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-12T13:45:45Z",
+      "side": 1,
+      "message": "This object already is a tap, you could use simply `setup`, but I was asking if `metadata` is being defined by you in this patch or if was defined by the device (by the Arduino code). If you are defining, go with `setup`, if the device defined it, keep `metadata`.\n\nWhich information about the setup is being used by the device? This is what needs to be stored in the cloud.",
+      "parentUuid": "79e1662f_6756a232",
+      "revId": "0522d5cd6ada96c8d8cc37a18e426d02fcea0a2d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "927afc72_5a3ac3f4",
         "filename": "test/infrastructure/CloudTapStore.spec.js",
         "patchSetId": 6
