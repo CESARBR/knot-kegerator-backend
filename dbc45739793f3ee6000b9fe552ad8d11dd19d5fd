@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "93ec4c51_a78432b6",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-12T13:26:21Z",
+      "side": 1,
+      "message": "All the details could directly accessible in `ValidationError`, instead of being hidden in the `details` structure. See that because of the `details` structure, you need a factory method (handleValidationError()) to create it.\n\nThis could be done the other way around: `ValidationError` contains `field` and `code` and in the server you add a `handleValidationError` that will map `ValidationError` to the desired output.\n\nIt makes sense because whoever is generating this error, knows the details about it.",
+      "revId": "dbc45739793f3ee6000b9fe552ad8d11dd19d5fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6f37df6b_cb5a3bce",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-12T13:26:21Z",
+      "side": 1,
+      "message": "Instead of separating the store by storage type, separate them by entity type. The domain shouldn\u0027t know nothing about how it is stored. We should have the tap, beer and keg stores here.\n\nThe case of tap that is different, in which we are breaking this idea of knowing about the storage type (mongo/cloud). For now, keep them separated, unless you have a good idea to make this hidden to the domain layer. I\u0027ll think a bit about it.",
+      "revId": "dbc45739793f3ee6000b9fe552ad8d11dd19d5fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fca4705b_96aaabc9",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-12T13:26:21Z",
+      "side": 1,
+      "message": "Create a class from InvalidStateError, otherwise you\u0027ll have to parse the Error message to determine it is this kind of error.",
+      "revId": "dbc45739793f3ee6000b9fe552ad8d11dd19d5fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
