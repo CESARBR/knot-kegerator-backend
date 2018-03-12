@@ -36,6 +36,23 @@
     },
     {
       "key": {
+        "uuid": "92798d9d_f56a2b27",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-12T13:44:13Z",
+      "side": 1,
+      "message": "Isn\u0027t `get()` above already throwing this exception?",
+      "revId": "dbc45739793f3ee6000b9fe552ad8d11dd19d5fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fca4705b_96aaabc9",
         "filename": "src/interactors/SetupTap.js",
         "patchSetId": 11
