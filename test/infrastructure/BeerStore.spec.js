@@ -1,0 +1,94 @@
+import tape from 'tape';
+import around from 'tape-around';
+import sinon from 'sinon';
+import BeerStore from 'infrastructure/BeerStore';
+
+function createTest(countData) {
+  return around(tape)
+    .before(async (t) => {
+      const beerData = {
+        id: 'b02bb42d-ec78-4734-8a3b-8374ed37ef6b',
+        name: 'Capunga American Pale Ale',
+        brand: 'Capunga',
+        style: 'American Pale Ale',
+      };
+
+      const mongoConnection = {
+        count: sinon.stub().resolves(countData),
+        findOne: sinon.stub().resolves(beerData),
+      };
+
+      t.next(mongoConnection);
+    });
+}
+
+createTest(0)(
+  'BeerStore.exists() calls count method on MongoConnection',
+  async (t, mongoConnection) => {
+    const beerStore = new BeerStore(mongoConnection);
+
+    await beerStore.exists('b02bb42d-ec78-4734-8a3b-8374ed37ef6b');
+
+    t.true(mongoConnection.count.called);
+    t.end();
+  },
+);
+
+createTest(1)(
+  'BeerStore.exists() returns true if MongoConnection.count() is greater than 0',
+  async (t, mongoConnection) => {
+    const beerStore = new BeerStore(mongoConnection);
+
+    const expectedData = true;
+
+    const actualData = await beerStore.exists('b02bb42d-ec78-4734-8a3b-8374ed37ef6b');
+
+    t.deepEqual(expectedData, actualData);
+    t.end();
+  },
+);
+
+createTest(0)(
+  'BeerStore.exists() returns false if MongoConnection.count() is equal to 0',
+  async (t, mongoConnection) => {
+    const beerStore = new BeerStore(mongoConnection);
+
+    const expectedData = false;
+
+    const actualData = await beerStore.exists('b02bb42d-ec78-4734-8a3b-8374ed37ef6b');
+
+    t.deepEqual(expectedData, actualData);
+    t.end();
+  },
+);
+
+createTest(0)(
+  'BeerStore.get() calls findOne method on MongoConnection',
+  async (t, mongoConnection) => {
+    const beerStore = new BeerStore(mongoConnection);
+
+    await beerStore.get('b02bb42d-ec78-4734-8a3b-8374ed37ef6b');
+
+    t.true(mongoConnection.findOne.called);
+    t.end();
+  },
+);
+
+createTest(1)(
+  'BeerStore.get() returns Beer data from MongoConnection.findOne()',
+  async (t, mongoConnection) => {
+    const beerStore = new BeerStore(mongoConnection);
+
+    const expectedData = {
+      id: 'b02bb42d-ec78-4734-8a3b-8374ed37ef6b',
+      name: 'Capunga American Pale Ale',
+      brand: 'Capunga',
+      style: 'American Pale Ale',
+    };
+
+    const actualData = await beerStore.get('b02bb42d-ec78-4734-8a3b-8374ed37ef6b');
+
+    t.deepEqual(expectedData, actualData);
+    t.end();
+  },
+);
