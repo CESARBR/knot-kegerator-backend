@@ -34,6 +34,12 @@ class MongoConnection {
     const Model = this.mongoose.model(name, schema);
     return Model.deleteOne(query);
   }
+
+  count(name, schema, query) {
+    const Model = this.mongoose.model(name, schema);
+    const count = Model.count(query);
+    return count.exec();
+  }
 }
 
 export default MongoConnection;
