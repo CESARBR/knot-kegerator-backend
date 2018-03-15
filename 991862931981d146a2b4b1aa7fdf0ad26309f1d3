@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a11e4d1e_3d274bb4",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-15T13:02:19Z",
+      "side": 1,
+      "message": "I would like to know what the best approach to avoid these `undefined` values. Is it better to set default parameters on entities?",
+      "revId": "991862931981d146a2b4b1aa7fdf0ad26309f1d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
