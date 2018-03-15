@@ -213,6 +213,24 @@
     },
     {
       "key": {
+        "uuid": "02605f16_96c3b290",
+        "filename": "src/infrastructure/TapStore.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-15T12:11:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ce535e0b_84c221b9",
+      "revId": "f8ae7309e6755bef61262567d1686a9bdb866dc5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6021b719_13da14c9",
         "filename": "test/infrastructure/TapStore.spec.js",
         "patchSetId": 6
