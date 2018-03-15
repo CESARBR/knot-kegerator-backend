@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "761120bd_ffeab5de",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-15T12:07:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "93ec4c51_a78432b6",
+      "revId": "dbc45739793f3ee6000b9fe552ad8d11dd19d5fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6f37df6b_cb5a3bce",
         "filename": "src/interactors/SetupTap.js",
         "patchSetId": 11
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-12T13:26:21Z",
       "side": 1,
       "message": "Instead of separating the store by storage type, separate them by entity type. The domain shouldn\u0027t know nothing about how it is stored. We should have the tap, beer and keg stores here.\n\nThe case of tap that is different, in which we are breaking this idea of knowing about the storage type (mongo/cloud). For now, keep them separated, unless you have a good idea to make this hidden to the domain layer. I\u0027ll think a bit about it.",
+      "revId": "dbc45739793f3ee6000b9fe552ad8d11dd19d5fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a70ac9fc_5fb427a2",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-15T12:07:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f37df6b_cb5a3bce",
       "revId": "dbc45739793f3ee6000b9fe552ad8d11dd19d5fd",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "56de3179_c610e3e4",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-15T12:07:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "92798d9d_f56a2b27",
+      "revId": "dbc45739793f3ee6000b9fe552ad8d11dd19d5fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fca4705b_96aaabc9",
         "filename": "src/interactors/SetupTap.js",
         "patchSetId": 11
@@ -64,6 +118,24 @@
       "writtenOn": "2018-03-12T13:26:21Z",
       "side": 1,
       "message": "Create a class from InvalidStateError, otherwise you\u0027ll have to parse the Error message to determine it is this kind of error.",
+      "revId": "dbc45739793f3ee6000b9fe552ad8d11dd19d5fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6aa54c62_767b397b",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-15T12:07:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fca4705b_96aaabc9",
       "revId": "dbc45739793f3ee6000b9fe552ad8d11dd19d5fd",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
