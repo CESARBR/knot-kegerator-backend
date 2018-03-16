@@ -90,6 +90,24 @@
     },
     {
       "key": {
+        "uuid": "1fcd71e2_3ea86ca7",
+        "filename": "src/index.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-16T15:02:28Z",
+      "side": 1,
+      "message": "I understood and I didn\u0027t find a Meshblu built-in alternative to this. I think we can implement an endpoint specific to change the cloud credentials, it could recreate the current connection instance with the new credentials.",
+      "parentUuid": "d2ade325_f3dae83c",
+      "revId": "06a78eb5e978a2d58f78753196aafc25e84a73f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a1a9cdb_0bcc1e6b",
         "filename": "src/infrastructure/HapiServer.js",
         "patchSetId": 6
