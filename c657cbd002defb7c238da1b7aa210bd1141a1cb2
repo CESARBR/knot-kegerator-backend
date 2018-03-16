@@ -16,6 +16,24 @@
       "revId": "c657cbd002defb7c238da1b7aa210bd1141a1cb2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "98c01cb1_db411c96",
+        "filename": "src/infrastructure/HapiServer.js",
+        "patchSetId": 10
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-03-16T15:02:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4b77760e_ed37ce5d",
+      "revId": "c657cbd002defb7c238da1b7aa210bd1141a1cb2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
