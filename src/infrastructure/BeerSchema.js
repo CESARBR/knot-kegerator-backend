@@ -20,4 +20,6 @@ const BeerSchema = mongoose.Schema({
   },
 });
 
+BeerSchema.set('toObject', { getters: true });
+
 export default BeerSchema;
