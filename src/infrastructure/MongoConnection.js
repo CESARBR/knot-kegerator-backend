@@ -14,6 +14,11 @@ class MongoConnection {
     await this.mongoose.disconnect();
   }
 
+  find(name, schema) {
+    const Model = this.mongoose.model(name, schema);
+    return Model.find({}, { _id: 0, __v: 0 }).exec();
+  }
+
   findOne(name, schema, query) {
     const Model = this.mongoose.model(name, schema);
     return Model.findOne(query);
