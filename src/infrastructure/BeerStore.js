@@ -5,6 +5,10 @@ class BeerStore {
     this.connection = connection;
   }
 
+  async list() {
+    return this.connection.find('Beer', BeerSchema);
+  }
+
   async exists(id) {
     return !!await this.connection.count('Beer', BeerSchema, { id });
   }
