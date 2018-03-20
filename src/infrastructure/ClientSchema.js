@@ -14,4 +14,6 @@ const ClientSchema = mongoose.Schema({
   },
 });
 
+ClientSchema.set('toObject', { getters: true });
+
 export default ClientSchema;
