@@ -51,6 +51,11 @@ class HapiServer {
         path: '/taps/{id}/setup',
         handler: this.setupTapHandler.bind(this),
       },
+      {
+        method: 'GET',
+        path: '/beers',
+        handler: this.listBeersHandler.bind(this),
+      },
     ];
 
     return routes;
@@ -71,6 +76,17 @@ class HapiServer {
     }
 
     return h.response().code(204);
+  }
+
+  async listBeersHandler(request, h) {
+    let data;
+    try {
+      data = await this.kegeratorApi.listBeers();
+    } catch (err) {
+      return handleError(err, h);
+    }
+
+    return h.response(data).code(200);
   }
 }
 
