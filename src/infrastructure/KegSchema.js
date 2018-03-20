@@ -20,4 +20,6 @@ const KegSchema = mongoose.Schema({
   },
 });
 
+KegSchema.set('toObject', { getters: true });
+
 export default KegSchema;

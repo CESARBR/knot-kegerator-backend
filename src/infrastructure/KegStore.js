@@ -5,6 +5,11 @@ class KegStore {
     this.connection = connection;
   }
 
+  async getAll() {
+    const result = await this.connection.find('Keg', KegSchema);
+    return result;
+  }
+
   async exists(id) {
     const result = await this.connection.count('Keg', KegSchema, { id });
     if (!result) {
