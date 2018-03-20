@@ -34,6 +34,17 @@ const test = around(tape)
         totalVolume: 70.5,
       },
     ];
+    const clientsData = [
+      {
+        id: '325163c5-7f5d-46a7-beb6-45e94cb73f0f',
+        name: 'CESAR',
+      },
+      {
+        id: '3dd28356-a2bd-4a2b-ba26-22acfd2069c9',
+        name: 'Impact Hub',
+      },
+    ];
+
     const tapService = {
       setup: sinon.stub().resolves(),
     };
@@ -43,10 +54,41 @@ const test = around(tape)
     const kegService = {
       list: sinon.stub().resolves(kegsData),
     };
+    const clientService = {
+      list: sinon.stub().resolves(clientsData),
+    };
 
-    const hapiAPI = new HapiAPI(tapService, beerService, kegService);
+    const hapiAPI = new HapiAPI(tapService, beerService, kegService, clientService);
     t.next(hapiAPI);
   });
+
+test('listClients() calls ClientService.list()', async (t, hapiAPI) => {
+  await hapiAPI.listClients();
+
+  t.true(hapiAPI.clientService.list.called);
+  t.end();
+});
+
+test(
+  'listClients() returns a list of clients returned by ClientService.list()',
+  async (t, hapiAPI) => {
+    const expectedClients = [
+      {
+        id: '325163c5-7f5d-46a7-beb6-45e94cb73f0f',
+        name: 'CESAR',
+      },
+      {
+        id: '3dd28356-a2bd-4a2b-ba26-22acfd2069c9',
+        name: 'Impact Hub',
+      },
+    ];
+
+    const actualClients = await hapiAPI.listClients();
+
+    t.deepEqual(actualClients, expectedClients);
+    t.end();
+  },
+);
 
 test('listKegs() calls KegService.list()', async (t, hapiAPI) => {
   await hapiAPI.listKegs();
