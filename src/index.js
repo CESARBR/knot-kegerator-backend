@@ -1,6 +1,8 @@
 // Domain
 import SetupTap from 'interactors/SetupTap';
+import ListBeers from 'interactors/ListBeers';
 import TapService from 'services/TapService';
+import BeerService from 'services/BeerService';
 
 // Infrastructure
 import MongoConnection from 'infrastructure/MongoConnection';
@@ -43,9 +45,12 @@ const beerStore = new BeerStore(mongoConnection);
 const kegStore = new KegStore(mongoConnection);
 
 const setupTapInteractor = new SetupTap(tapStore, clientStore, beerStore, kegStore);
-const tapService = new TapService(setupTapInteractor);
+const listBeersInteractor = new ListBeers(beerStore);
 
-const hapiAPI = new HapiAPI(tapService);
+const tapService = new TapService(setupTapInteractor);
+const beerService = new BeerService(listBeersInteractor);
+
+const hapiAPI = new HapiAPI(tapService, beerService);
 const hapiServer = new HapiServer(hapiAPI);
 
 async function run() {
