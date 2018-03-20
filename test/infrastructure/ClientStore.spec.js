@@ -3,18 +3,76 @@ import around from 'tape-around';
 import sinon from 'sinon';
 import ClientStore from 'infrastructure/ClientStore';
 
-function createTest(countData) {
+const clientsData = [
+  {
+    id: '325163c5-7f5d-46a7-beb6-45e94cb73f0f',
+    name: 'CESAR',
+  },
+  {
+    id: '3dd28356-a2bd-4a2b-ba26-22acfd2069c9',
+    name: 'Impact Hub',
+  },
+];
+
+function createTest(countData, findData) {
   return around(tape)
     .before(async (t) => {
       const mongoConnection = {
         count: sinon.stub().resolves(countData),
+        find: sinon.stub().resolves(findData),
       };
 
       t.next(mongoConnection);
     });
 }
+createTest(0, [])(
+  'ClientStore.list() calls find method on MongoConnection',
+  async (t, mongoConnection) => {
+    const clientStore = new ClientStore(mongoConnection);
 
-createTest(0)(
+    await clientStore.list();
+
+    t.true(mongoConnection.find.called);
+    t.end();
+  },
+);
+
+createTest(1, clientsData)(
+  'ClientStore.list() returns a list of clients from MongoConnection.find()',
+  async (t, mongoConnection) => {
+    const clientStore = new ClientStore(mongoConnection);
+    const expectedClients = [
+      {
+        id: '325163c5-7f5d-46a7-beb6-45e94cb73f0f',
+        name: 'CESAR',
+      },
+      {
+        id: '3dd28356-a2bd-4a2b-ba26-22acfd2069c9',
+        name: 'Impact Hub',
+      },
+    ];
+
+    const actualClients = await clientStore.list();
+
+    t.deepEqual(actualClients, expectedClients);
+    t.end();
+  },
+);
+
+createTest(1, [])(
+  'ClientStore.list() returns a empty list if no client if found from MongoConnection.find()',
+  async (t, mongoConnection) => {
+    const clientStore = new ClientStore(mongoConnection);
+    const expectedList = [];
+
+    const actualList = await clientStore.list();
+
+    t.deepEqual(actualList, expectedList);
+    t.end();
+  },
+);
+
+createTest(null, [])(
   'ClientStore.exists() calls count method on MongoConnection',
   async (t, mongoConnection) => {
     const clientStore = new ClientStore(mongoConnection);
@@ -26,7 +84,7 @@ createTest(0)(
   },
 );
 
-createTest(1)(
+createTest(1, [])(
   'ClientStore.exists() returns true if MongoConnection.count() is greater than 0',
   async (t, mongoConnection) => {
     const clientStore = new ClientStore(mongoConnection);
@@ -40,7 +98,7 @@ createTest(1)(
   },
 );
 
-createTest(0)(
+createTest(0, [])(
   'ClientStore.exists() returns false if MongoConnection.count() is equal to 0',
   async (t, mongoConnection) => {
     const clientStore = new ClientStore(mongoConnection);
