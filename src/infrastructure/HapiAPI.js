@@ -1,10 +1,11 @@
 import { SetupTapRequest } from 'services/SetupTapRequest';
 
 class HapiAPI {
-  constructor(tapService, beerService, kegService) {
+  constructor(tapService, beerService, kegService, clientService) {
     this.tapService = tapService;
     this.beerService = beerService;
     this.kegService = kegService;
+    this.clientService = clientService;
   }
 
   async setupTap(tap) {
@@ -18,6 +19,10 @@ class HapiAPI {
 
   async listKegs() {
     return this.kegService.list();
+  }
+
+  async listClients() {
+    return this.clientService.list();
   }
 }
 
