@@ -6,12 +6,62 @@ import { SetupTapRequest } from 'services/SetupTapRequest';
 
 const test = around(tape)
   .before((t) => {
+    const beersData = [
+      {
+        id: '1fb78cbb-5fc1-46fd-80e5-cf541b905324',
+        name: 'Capunga American Pale Ale',
+        brand: 'Capunga',
+        style: 'American Pale Ale',
+      },
+      {
+        id: 'ce47b845-80bf-4f1f-b939-0fe5bc271024',
+        name: 'Capunga American Lager',
+        brand: 'Capunga',
+        style: 'American Premium Lager',
+      },
+    ];
     const tapService = {
       setup: sinon.stub().resolves(),
     };
-    const hapiAPI = new HapiAPI(tapService);
+    const beerService = {
+      list: sinon.stub().resolves(beersData),
+    };
+    const hapiAPI = new HapiAPI(tapService, beerService);
     t.next(hapiAPI);
   });
+
+
+test('listBeers() calls BeerService.list()', async (t, hapiAPI) => {
+  await hapiAPI.listBeers();
+
+  t.true(hapiAPI.beerService.list.called);
+  t.end();
+});
+
+test(
+  'listBeers() returns a list of beer returned by BeerService.list()',
+  async (t, hapiAPI) => {
+    const expectedBeers = [
+      {
+        id: '1fb78cbb-5fc1-46fd-80e5-cf541b905324',
+        name: 'Capunga American Pale Ale',
+        brand: 'Capunga',
+        style: 'American Pale Ale',
+      },
+      {
+        id: 'ce47b845-80bf-4f1f-b939-0fe5bc271024',
+        name: 'Capunga American Lager',
+        brand: 'Capunga',
+        style: 'American Premium Lager',
+      },
+    ];
+
+    const actualBeers = await hapiAPI.listBeers();
+
+    t.deepEqual(actualBeers, expectedBeers);
+    t.end();
+  },
+);
 
 test('setupTap() calls TapService.setup()', async (t, hapiAPI) => {
   await hapiAPI.setupTap(
