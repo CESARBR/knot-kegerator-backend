@@ -1,14 +1,17 @@
 // Domain
 import SetupTap from 'interactors/SetupTap';
 import ListBeers from 'interactors/ListBeers';
+import ListKegs from 'interactors/ListKegs';
 import TapService from 'services/TapService';
 import BeerService from 'services/BeerService';
+import KegService from 'services/KegService';
 
 // Infrastructure
 import MongoConnection from 'infrastructure/MongoConnection';
 import CloudConnection from 'infrastructure/CloudConnection';
 
 import BeerSchema from 'infrastructure/BeerSchema';
+import KegSchema from 'infrastructure/KegSchema';
 
 import TapBoundStore from 'infrastructure/TapBoundStore';
 
@@ -48,11 +51,13 @@ const kegStore = new KegStore(mongoConnection);
 
 const setupTapInteractor = new SetupTap(tapStore, clientStore, beerStore, kegStore);
 const listBeersInteractor = new ListBeers(beerStore);
+const listKegsInteractor = new ListKegs(kegStore);
 
 const tapService = new TapService(setupTapInteractor);
 const beerService = new BeerService(listBeersInteractor);
+const kegService = new KegService(listKegsInteractor);
 
-const hapiAPI = new HapiAPI(tapService, beerService);
+const hapiAPI = new HapiAPI(tapService, beerService, kegService);
 const hapiServer = new HapiServer(hapiAPI);
 
 async function insertBeers() {
@@ -86,11 +91,36 @@ async function insertBeers() {
   }
 }
 
+async function insertKegs() {
+  const kegs = [
+    {
+      id: 'd6600558-f101-45be-bf8a-4b5aed40cf9f',
+      name: 'Stainless steel',
+      weight: 10,
+      totalVolume: 70.5,
+    },
+    {
+      id: '58a6168c-5676-41a0-8beb-b983764eb797',
+      name: 'Rubber',
+      weight: 5,
+      totalVolume: 70.5,
+    },
+  ];
+
+  const dbKegs = await mongoConnection.find('Keg', KegSchema);
+
+  if (!dbKegs.length) {
+    await mongoConnection.save('Keg', KegSchema, kegs[0]);
+    await mongoConnection.save('Keg', KegSchema, kegs[1]);
+  }
+}
+
 async function run() {
   await mongoConnection.start();
   await cloudConnetion.start();
   await hapiServer.start();
   await insertBeers();
+  await insertKegs();
 }
 
 run();

@@ -20,16 +20,65 @@ const test = around(tape)
         style: 'American Premium Lager',
       },
     ];
+    const kegsData = [
+      {
+        id: 'd6600558-f101-45be-bf8a-4b5aed40cf9f',
+        name: 'Stainless steel',
+        weight: 10,
+        totalVolume: 70.5,
+      },
+      {
+        id: '58a6168c-5676-41a0-8beb-b983764eb797',
+        name: 'Rubber',
+        weight: 5,
+        totalVolume: 70.5,
+      },
+    ];
     const tapService = {
       setupTap: sinon.stub().resolves(),
     };
     const beerService = {
       listBeers: sinon.stub().resolves(beersData),
     };
-    const hapiAPI = new HapiAPI(tapService, beerService);
+    const kegService = {
+      listKegs: sinon.stub().resolves(kegsData),
+    };
+
+    const hapiAPI = new HapiAPI(tapService, beerService, kegService);
     t.next(hapiAPI);
   });
 
+test('listKegs() calls KegService.listKegs()', async (t, hapiAPI) => {
+  await hapiAPI.listKegs();
+
+  t.true(hapiAPI.kegService.listKegs.called);
+  t.end();
+});
+
+test(
+  'listKegs() returns a list of keg returned by KegService.listKegs()',
+  async (t, hapiAPI) => {
+    const expectedKegs = [
+      {
+        id: 'd6600558-f101-45be-bf8a-4b5aed40cf9f',
+        name: 'Stainless steel',
+        weight: 10,
+        totalVolume: 70.5,
+      },
+      {
+        id: '58a6168c-5676-41a0-8beb-b983764eb797',
+        name: 'Rubber',
+        weight: 5,
+        totalVolume: 70.5,
+      },
+    ];
+
+    const actualKegs = await hapiAPI.listKegs();
+
+    t.deepEqual(actualKegs, expectedKegs);
+    t.end();
+  },
+);
 
 test('listBeers() calls BeerService.listBeers()', async (t, hapiAPI) => {
   await hapiAPI.listBeers();
