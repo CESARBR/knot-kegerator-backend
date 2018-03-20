@@ -5,6 +5,10 @@ class KegStore {
     this.connection = connection;
   }
 
+  async list() {
+    return this.connection.find('Keg', KegSchema);
+  }
+
   async exists(id) {
     return !!await this.connection.count('Keg', KegSchema, { id });
   }
