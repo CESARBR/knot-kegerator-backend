@@ -6,13 +6,92 @@ import { SetupTapRequest } from 'services/SetupTapRequest';
 
 const test = around(tape)
   .before((t) => {
+    const tapsData = [
+      {
+        id: '7bfe7203-2617-4590-bfac-8d48923fbf01',
+        name: 'Office tap',
+        waitingSetup: false,
+        setup: {
+          client: {
+            id: '325163c5-7f5d-46a7-beb6-45e94cb73f0f',
+            name: 'CESAR',
+          },
+          beer: {
+            id: '1fb78cbb-5fc1-46fd-80e5-cf541b905324',
+            name: 'Capunga American Pale Ale',
+            brand: 'Capunga',
+            style: 'American Pale Ale',
+          },
+          keg: {
+            id: 'd6600558-f101-45be-bf8a-4b5aed40cf9f',
+            name: 'Stainless steel',
+            weight: 10,
+            totalVolume: 50,
+          },
+        },
+        volume: 10.5,
+      },
+      {
+        id: 'da412ca4-e2c4-4475-8461-abfffabde9e5',
+        name: 'Market tap',
+        waitingSetup: true,
+      },
+    ];
     const setupTapInteractor = {
       execute: sinon.stub().resolves(),
     };
+    const listTapsInteractor = {
+      execute: sinon.stub().resolves(tapsData),
+    };
 
-    const tapService = new TapService(setupTapInteractor);
+    const tapService = new TapService(setupTapInteractor, listTapsInteractor);
     t.next(tapService);
   });
+
+test('listTaps() calls ListTaps.execute()', async (t, tapService) => {
+  await tapService.listTaps();
+
+  t.true(tapService.listTapsInteractor.execute.called);
+  t.end();
+});
+
+test('listTaps() returns Taps returned by ListTaps.execute()', async (t, tapService) => {
+  const expectedTaps = [
+    {
+      id: '7bfe7203-2617-4590-bfac-8d48923fbf01',
+      name: 'Office tap',
+      waitingSetup: false,
+      setup: {
+        client: {
+          id: '325163c5-7f5d-46a7-beb6-45e94cb73f0f',
+          name: 'CESAR',
+        },
+        beer: {
+          id: '1fb78cbb-5fc1-46fd-80e5-cf541b905324',
+          name: 'Capunga American Pale Ale',
+          brand: 'Capunga',
+          style: 'American Pale Ale',
+        },
+        keg: {
+          id: 'd6600558-f101-45be-bf8a-4b5aed40cf9f',
+          name: 'Stainless steel',
+          weight: 10,
+          totalVolume: 50,
+        },
+      },
+      volume: 10.5,
+    },
+    {
+      id: 'da412ca4-e2c4-4475-8461-abfffabde9e5',
+      name: 'Market tap',
+      waitingSetup: true,
+    },
+  ];
+  const actualTaps = await tapService.listTaps();
+
+  t.deepEqual(actualTaps, expectedTaps);
+  t.end();
+});
 
 test('setupTap() calls SetupTap.execute()', async (t, tapService) => {
   const request = new SetupTapRequest(
