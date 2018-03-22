@@ -17,4 +17,6 @@ const TapSchema = mongoose.Schema({
   },
 });
 
+TapSchema.set('toObject', { getters: true });
+
 export default TapSchema;

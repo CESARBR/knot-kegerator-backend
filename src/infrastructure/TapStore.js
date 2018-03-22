@@ -1,9 +1,10 @@
 import Tap from 'entities/Tap';
 
 class TapStore {
-  constructor(databaseTapStore, cloudTapStore, beerStore, kegStore) {
+  constructor(databaseTapStore, cloudTapStore, clientStore, beerStore, kegStore) {
     this.databaseTapStore = databaseTapStore;
     this.cloudTapStore = cloudTapStore;
+    this.clientStore = clientStore;
     this.beerStore = beerStore;
     this.kegStore = kegStore;
   }
@@ -21,6 +22,37 @@ class TapStore {
     );
 
     return tap;
+  }
+
+  async list() {
+    const tapsFromCloud = await this.cloudTapStore.list();
+    const tapsFromDatabase = await this.databaseTapStore.list();
+
+    const tapList = [];
+
+    for (let i = 0; i < tapsFromCloud.length; i += 1) {
+      const tap = {};
+      const tapFromDatabase = tapsFromDatabase.find(t => t.id === tapsFromCloud[i].id);
+
+      if (tapFromDatabase) {
+        tap.id = tapsFromCloud[i].id;
+        tap.name = tapFromDatabase.name;
+        tap.waitingSetup = tapsFromCloud[i].waitingSetup;
+
+        if (!tap.waitingSetup) {
+          tap.setup = {
+            clientId: tapFromDatabase.setup.clientId,
+            beerId: tapFromDatabase.setup.beerId,
+            kegId: tapFromDatabase.setup.kegId,
+          };
+          tap.volume = tapsFromCloud[i].volume;
+        }
+      }
+
+      tapList.push(tap);
+    }
+
+    return tapList;
   }
 
   async update(tap) {
