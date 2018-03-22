@@ -17,15 +17,43 @@ const setup = new Setup(
 const defaultTap = new Tap(
   '118cc3b3-f582-4d12-9a4f-184543000000',
   'CESAR tap',
-  undefined,
   setup,
-  undefined,
 );
+
+const tapsData = [
+  {
+    id: '7bfe7203-2617-4590-bfac-8d48923fbf01',
+    name: 'Office tap',
+    setup: {
+      client: {
+        id: '325163c5-7f5d-46a7-beb6-45e94cb73f0f',
+        name: 'CESAR',
+      },
+      beer: {
+        id: '1fb78cbb-5fc1-46fd-80e5-cf541b905324',
+        name: 'Capunga American Pale Ale',
+        brand: 'Capunga',
+        style: 'American Pale Ale',
+      },
+      keg: {
+        id: 'd6600558-f101-45be-bf8a-4b5aed40cf9f',
+        name: 'Stainless steel',
+        weight: 10,
+        totalVolume: 50,
+      },
+    },
+  },
+  {
+    id: 'da412ca4-e2c4-4475-8461-abfffabde9e5',
+    name: 'Market tap',
+  },
+];
 
 function createTest(findData, updateData) {
   return around(tape)
     .before(async (t) => {
       const mongoConnection = {
+        find: sinon.stub().resolves(findData),
         findOne: sinon.stub().resolves(findData),
         findOneAndUpdate: sinon.stub().resolves(updateData),
       };
@@ -81,6 +109,32 @@ createTest(null, null)(
     t.end();
   },
 );
+
+createTest(tapsData, null)(
+  'TapStore.getAll() calls find method on MongoConnection',
+  async (t, mongoConnection) => {
+    const tapStore = new TapStore(mongoConnection);
+
+    await tapStore.getAll();
+
+    t.true(mongoConnection.find.called);
+    t.end();
+  },
+);
+
+createTest(tapsData, null)(
+  'TapStore.getAll() returns tap data returned by calling MongoConnection.find()',
+  async (t, mongoConnection) => {
+    const tapStore = new TapStore(mongoConnection);
+    const expectedTaps = tapsData;
+
+    const actualTaps = await tapStore.getAll();
+
+    t.deepEqual(expectedTaps, actualTaps);
+    t.end();
+  },
+);
+
 
 createTest(null, defaultTap)(
   'TapStore.update() calls findOneAndUpdate method on MongoConnection',

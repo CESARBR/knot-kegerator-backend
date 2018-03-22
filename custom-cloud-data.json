@@ -1,0 +1,12 @@
+[
+  {
+    "id": "7bfe7203-2617-4590-bfac-8d48923fbf01",
+    "waitingSetup": false,
+    "volume": 50
+  },
+  {
+    "id": "da412ca4-e2c4-4475-8461-abfffabde9e5",
+    "waitingSetup": true,
+    "volume": 0
+  }
+]
