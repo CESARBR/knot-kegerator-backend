@@ -10,7 +10,8 @@
     "build": "babel src --out-dir bin",
     "test": "babel-tape-runner test/**/*.js",
     "start": "node bin",
-    "start:dev_server": "babel-node src"
+    "start:dev_server": "babel-node src",
+    "db_seed": "babel-node dbSeed.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
