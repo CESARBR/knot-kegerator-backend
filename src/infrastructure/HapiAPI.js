@@ -24,6 +24,10 @@ class HapiAPI {
   async listClients() {
     return this.clientService.listClients();
   }
+
+  async listTaps() {
+    return this.tapService.listTaps();
+  }
 }
 
 export default HapiAPI;
