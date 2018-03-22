@@ -1,5 +1,7 @@
+/* eslint-disable class-methods-use-this */
 import EntityNotFoundError from 'entities/EntityNotFoundError';
 import CloudTap from 'infrastructure/CloudTap';
+import fs from 'fs';
 
 const SETUP_REQUEST_ID = 1;
 const REMAINING_VOLUME_ID = 2;
@@ -55,6 +57,17 @@ class CloudTapStore {
       waitingSetup === 'true',
       parseFloat(remainingVolume),
     );
+  }
+
+  async getAll() {
+    return new Promise((resolve, reject) => {
+      fs.readFile('custom-cloud-data.json', (err, data) => {
+        if (err) {
+          return reject(err);
+        }
+        return resolve(JSON.parse(data));
+      });
+    });
   }
 
   async update(tap) {

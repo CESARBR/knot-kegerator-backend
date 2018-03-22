@@ -11,6 +11,46 @@ import TapBoundStore from 'infrastructure/TapBoundStore';
 
 const test = around(tape)
   .before(async (t) => {
+    const tapsFromCloud = [
+      {
+        id: '7bfe7203-2617-4590-bfac-8d48923fbf01',
+        waitingSetup: false,
+        volume: 50,
+      },
+      {
+        id: 'da412ca4-e2c4-4475-8461-abfffabde9e5',
+        waitingSetup: true,
+        volume: 0,
+      },
+    ];
+    const tapsFromDatabase = [
+      {
+        id: '7bfe7203-2617-4590-bfac-8d48923fbf01',
+        name: 'Office tap',
+        setup: {
+          client: {
+            id: '325163c5-7f5d-46a7-beb6-45e94cb73f0f',
+            name: 'CESAR',
+          },
+          beer: {
+            id: '1fb78cbb-5fc1-46fd-80e5-cf541b905324',
+            name: 'Capunga American Pale Ale',
+            brand: 'Capunga',
+            style: 'American Pale Ale',
+          },
+          keg: {
+            id: 'd6600558-f101-45be-bf8a-4b5aed40cf9f',
+            name: 'Stainless steel',
+            weight: 10,
+            totalVolume: 50,
+          },
+        },
+      },
+      {
+        id: 'da412ca4-e2c4-4475-8461-abfffabde9e5',
+        name: 'Market tap',
+      },
+    ];
     const tapFromCloud = new CloudTap(
       '118cc3b3-f582-4d12-9a4f-184543000000',
       true,
@@ -44,10 +84,12 @@ const test = around(tape)
 
     const tapStore = {
       get: sinon.stub().resolves(tapFromDatabase),
+      getAll: sinon.stub().resolves(tapsFromDatabase),
       update: sinon.stub().resolves(),
     };
     const cloudTapStore = {
       get: sinon.stub().resolves(tapFromCloud),
+      getAll: sinon.stub().resolves(tapsFromCloud),
       update: sinon.stub().resolves(),
     };
 
@@ -109,6 +151,74 @@ test(
     const actualTap = await tapBoundStore.get('118cc3b3-f582-4d12-9a4f-184543000000');
 
     t.deepEqual(actualTap, expectedTap);
+    t.end();
+  },
+);
+
+test(
+  'TapBoundStore.getAll() calls getAll method on tapStore',
+  async (t, tapStore, cloudTapStore) => {
+    const tapBoundStore = new TapBoundStore(tapStore, cloudTapStore);
+
+    await tapBoundStore.getAll();
+
+    t.true(tapStore.getAll.called);
+    t.end();
+  },
+);
+
+test(
+  'TapBoundStore.getAll() calls getAll method on cloudTapStore',
+  async (t, tapStore, cloudTapStore) => {
+    const tapBoundStore = new TapBoundStore(tapStore, cloudTapStore);
+
+    await tapBoundStore.getAll();
+
+    t.true(cloudTapStore.getAll.called);
+    t.end();
+  },
+);
+
+test(
+  'TapBoundStore.getAll() returns Taps from tapStore and cloudTapStore',
+  async (t, tapStore, cloudTapStore) => {
+    const tapBoundStore = new TapBoundStore(tapStore, cloudTapStore);
+
+    const expectedTaps = [
+      {
+        id: '7bfe7203-2617-4590-bfac-8d48923fbf01',
+        name: 'Office tap',
+        waitingSetup: false,
+        setup: {
+          client: {
+            id: '325163c5-7f5d-46a7-beb6-45e94cb73f0f',
+            name: 'CESAR',
+          },
+          beer: {
+            id: '1fb78cbb-5fc1-46fd-80e5-cf541b905324',
+            name: 'Capunga American Pale Ale',
+            brand: 'Capunga',
+            style: 'American Pale Ale',
+          },
+          keg: {
+            id: 'd6600558-f101-45be-bf8a-4b5aed40cf9f',
+            name: 'Stainless steel',
+            weight: 10,
+            totalVolume: 50,
+          },
+        },
+        volume: 50,
+      },
+      {
+        id: 'da412ca4-e2c4-4475-8461-abfffabde9e5',
+        name: 'Market tap',
+        waitingSetup: true,
+      },
+    ];
+
+    const actualTaps = await tapBoundStore.getAll();
+
+    t.deepEqual(actualTaps, expectedTaps);
     t.end();
   },
 );

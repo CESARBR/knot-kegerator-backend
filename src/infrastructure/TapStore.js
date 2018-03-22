@@ -15,6 +15,11 @@ class TapStore {
     return result;
   }
 
+  async getAll() {
+    const result = await this.connection.find('Tap', TapSchema);
+    return result;
+  }
+
   async update(tap) {
     const result = await this.connection.findOneAndUpdate('Tap', TapSchema, { id: tap.id }, tap);
     if (!result) {
