@@ -66,6 +66,11 @@ class HapiServer {
         path: '/clients',
         handler: this.listClientsHandler.bind(this),
       },
+      {
+        method: 'GET',
+        path: '/taps',
+        handler: this.listTapsHandler.bind(this),
+      },
     ];
 
     return routes;
@@ -114,6 +119,17 @@ class HapiServer {
     let data;
     try {
       data = await this.kegeratorApi.listClients();
+    } catch (err) {
+      return handleError(err, h);
+    }
+
+    return h.response(data).code(200);
+  }
+
+  async listTapsHandler(request, h) {
+    let data;
+    try {
+      data = await this.kegeratorApi.listTaps();
     } catch (err) {
       return handleError(err, h);
     }

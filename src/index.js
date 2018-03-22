@@ -3,6 +3,8 @@ import SetupTap from 'interactors/SetupTap';
 import ListBeers from 'interactors/ListBeers';
 import ListKegs from 'interactors/ListKegs';
 import ListClients from 'interactors/ListClients';
+import ListTaps from 'interactors/ListTaps';
+
 import TapService from 'services/TapService';
 import BeerService from 'services/BeerService';
 import KegService from 'services/KegService';
@@ -52,8 +54,9 @@ const setupTapInteractor = new SetupTap(tapStore, clientStore, beerStore, kegSto
 const listBeersInteractor = new ListBeers(beerStore);
 const listKegsInteractor = new ListKegs(kegStore);
 const listClientsInteractor = new ListClients(clientStore);
+const listTapsInteractor = new ListTaps(tapStore);
 
-const tapService = new TapService(setupTapInteractor);
+const tapService = new TapService(setupTapInteractor, listTapsInteractor);
 const beerService = new BeerService(listBeersInteractor);
 const kegService = new KegService(listKegsInteractor);
 const clientService = new ClientService(listClientsInteractor);
