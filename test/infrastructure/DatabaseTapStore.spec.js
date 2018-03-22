@@ -21,6 +21,7 @@ function createTest(findData, updateData) {
     .before(async (t) => {
       const mongoConnection = {
         findOne: sinon.stub().resolves(findData),
+        find: sinon.stub().resolves(findData),
         findOneAndUpdate: sinon.stub().resolves(updateData),
       };
 

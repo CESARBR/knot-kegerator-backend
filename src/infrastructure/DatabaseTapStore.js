@@ -20,6 +20,10 @@ class DatabaseTapStore {
     );
   }
 
+  async list() {
+    return this.connection.find('Tap', TapSchema);
+  }
+
   async update(tap) {
     const result = await this.connection.findOneAndUpdate('Tap', TapSchema, { id: tap.id }, tap);
     if (!result) {
