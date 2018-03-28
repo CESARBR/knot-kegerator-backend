@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ada5ca7d_5afdeb82",
+        "filename": "src/infrastructure/TapBoundStore.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:06:37Z",
+      "side": 1,
+      "message": "This is the actual `TapStore`. We could rename the current TapStore to `DatabaseTapStore`, to follow the current pattern, and rename this to TapStore.",
+      "revId": "55919ec16c1b870766872e260f10cbac036d8fbd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
