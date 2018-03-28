@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b0261e26_6863524e",
+        "filename": "src/interactors/ListKegs.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T14:17:30Z",
+      "side": 1,
+      "message": "list",
+      "revId": "0b7b5e98d0895ac3af2030024896de57f394c2eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1e24e2c7_8f8a18ad",
+        "filename": "src/services/KegService.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T14:17:30Z",
+      "side": 1,
+      "message": "list",
+      "revId": "0b7b5e98d0895ac3af2030024896de57f394c2eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
