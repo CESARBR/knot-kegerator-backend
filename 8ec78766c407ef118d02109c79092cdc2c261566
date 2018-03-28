@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "55dca4a5_9a400fb8",
+        "filename": "src/infrastructure/ClientStore.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T14:23:01Z",
+      "side": 1,
+      "message": "list",
+      "revId": "8ec78766c407ef118d02109c79092cdc2c261566",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7d0bb284_74a0a43e",
+        "filename": "src/infrastructure/ClientStore.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T14:23:01Z",
+      "side": 1,
+      "message": "`return await this....`",
+      "revId": "8ec78766c407ef118d02109c79092cdc2c261566",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
