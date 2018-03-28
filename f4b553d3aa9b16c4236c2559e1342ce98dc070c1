@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "de1f024d_64cb7e72",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:05:40Z",
+      "side": 1,
+      "message": "This block should be moved to `getDataFromSensor`.\n\nWhile reading `getDataFromSensor` I was feeling that something was missing, that it wouldn\u0027t work, until I see this other code block where you update the device first. The update is part of the `getDataFromSensor` operation.",
+      "range": {
+        "startLine": 35,
+        "startChar": 4,
+        "endLine": 40,
+        "endChar": 7
+      },
+      "revId": "f4b553d3aa9b16c4236c2559e1342ce98dc070c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "38879931_3193f174",
+        "filename": "test/infrastructure/CloudTapStore.spec.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:05:40Z",
+      "side": 1,
+      "message": "`getDataFromSensor` is an implementation detail, we should not specify (thinking of a test as an specification) that `CloudTapStore` should depend on it.\n\nInstead, we should specify how it interacts with the cloudConnection. Which operations on the cloudConnection will need to be held? In the test above you say that it will need to call update and below that it will can subscribe, what happens after?\n\nCan you create stubs on update/subscribe to resolve mimic what would happen like you did with `getDataFromSensor`?",
+      "revId": "f4b553d3aa9b16c4236c2559e1342ce98dc070c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
