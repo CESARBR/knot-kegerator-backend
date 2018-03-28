@@ -70,6 +70,23 @@
     },
     {
       "key": {
+        "uuid": "384d5f16_554b5eba",
+        "filename": "src/services/TapService.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:21:21Z",
+      "side": 1,
+      "message": "It can be simply `setup`. Every method in this class will be in the context of a tap.",
+      "revId": "17d3fc0684e1e1e6f52d5935cbdbd215cb820fdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c41a83c2_061f81e0",
         "filename": "test/interactors/SetupTap.spec.js",
         "patchSetId": 13
