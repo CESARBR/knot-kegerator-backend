@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e6814fd0_3bf73292",
+        "filename": "src/infrastructure/ClientStore.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:11:31Z",
+      "side": 1,
+      "message": "You can replace this with `return !!result` or even `return !!await this...`",
+      "revId": "5e6bd5a5aa80f500c04e5dac8e5718d383c99f7f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "69538534_b4fa8445",
+        "filename": "test/infrastructure/ClientStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:11:31Z",
+      "side": 1,
+      "message": "This should be 0 instead of null.",
+      "revId": "5e6bd5a5aa80f500c04e5dac8e5718d383c99f7f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ab510031_e35165c4",
+        "filename": "test/infrastructure/ClientStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:11:31Z",
+      "side": 1,
+      "message": "\"if count() is greater than 0\".",
+      "revId": "5e6bd5a5aa80f500c04e5dac8e5718d383c99f7f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d3888737_5ed979ed",
+        "filename": "test/infrastructure/ClientStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:11:31Z",
+      "side": 1,
+      "message": "\"if count is 0\"",
+      "revId": "5e6bd5a5aa80f500c04e5dac8e5718d383c99f7f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
