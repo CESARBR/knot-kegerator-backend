@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f64a519_13673329",
+        "filename": "src/infrastructure/KegStore.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:14:12Z",
+      "side": 1,
+      "message": "`return !!result` or `return !!await ...`",
+      "revId": "68c2a16514eff08878eb7a42606594f6eabdab37",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "778e5fc0_63919201",
+        "filename": "test/infrastructure/KegStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:14:12Z",
+      "side": 1,
+      "message": "0 instead of null",
+      "revId": "68c2a16514eff08878eb7a42606594f6eabdab37",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "04e3e28d_bd44f33b",
+        "filename": "test/infrastructure/KegStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:14:12Z",
+      "side": 1,
+      "message": "\"count() greater than 0\"",
+      "revId": "68c2a16514eff08878eb7a42606594f6eabdab37",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2c8bdfd7_76ec41cb",
+        "filename": "test/infrastructure/KegStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:14:12Z",
+      "side": 1,
+      "message": "\"count() equal to 0\"",
+      "revId": "68c2a16514eff08878eb7a42606594f6eabdab37",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
