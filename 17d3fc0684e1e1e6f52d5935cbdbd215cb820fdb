@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "60cc3c38_d15e5baa",
+        "filename": "package.json",
+        "patchSetId": 13
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:02:27Z",
+      "side": 1,
+      "message": "Put `tape-around` and `sinon` as `devDependencies`",
+      "revId": "17d3fc0684e1e1e6f52d5935cbdbd215cb820fdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "79f09a38_27d7a552",
+        "filename": "src/entities/Company.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:02:27Z",
+      "side": 1,
+      "message": "Server and port will be configurable system-wide instead of per company. Leave only uuid and token.",
+      "revId": "17d3fc0684e1e1e6f52d5935cbdbd215cb820fdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b9c4df73_5de0e066",
+        "filename": "src/entities/EntityNotFoundError.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:02:27Z",
+      "side": 1,
+      "message": "I think \"wasn\u0027t/was not found\" is more natural to read.",
+      "revId": "17d3fc0684e1e1e6f52d5935cbdbd215cb820fdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "29d2526b_6da2a2e5",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:02:27Z",
+      "side": 1,
+      "message": "If the tap doesn\u0027t have a current, will this break?\n\nI was thinking that we could have another representation of a Tap to be passed to TapStore, one in which Setup has only IDs instead of the full entities. The current representation would be used only when we implement GET /taps.\n\nChange Setup to have only IDs. When we get to GET /taps, we organize these representations of entities in a different way.\n\nFor reference, see how it is being done in the Android app. Notice that each \"layer\" has a `model` package with a different representation of a Keg: https://github.com/CESARBR/knot-kegerator-android/tree/master/app/src/main/java/br/org/cesar/knot/kegerator",
+      "revId": "17d3fc0684e1e1e6f52d5935cbdbd215cb820fdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c41a83c2_061f81e0",
+        "filename": "test/interactors/SetupTap.spec.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-03-28T02:02:27Z",
+      "side": 1,
+      "message": "exists() should return true or false.\n\nAnd doing this way, you won\u0027t need client, beer and keg variables created above.",
+      "revId": "17d3fc0684e1e1e6f52d5935cbdbd215cb820fdb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
