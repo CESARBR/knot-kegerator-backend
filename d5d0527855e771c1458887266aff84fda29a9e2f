@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "25a75444_a16d7878",
+        "filename": "src/infrastructure/BeerStore.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:27:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "383b7750_d085953b",
+      "revId": "d5d0527855e771c1458887266aff84fda29a9e2f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ff06157_111bfd7c",
         "filename": "test/infrastructure/BeerStore.spec.js",
         "patchSetId": 4
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "9dfb6228_06fa70dd",
+        "filename": "test/infrastructure/BeerStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:27:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5ff06157_111bfd7c",
+      "revId": "d5d0527855e771c1458887266aff84fda29a9e2f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a8451566_1351bc8c",
         "filename": "test/infrastructure/BeerStore.spec.js",
         "patchSetId": 4
@@ -47,6 +83,24 @@
       "writtenOn": "2018-03-28T02:13:06Z",
       "side": 1,
       "message": "\"count() equal to 0\"",
+      "revId": "d5d0527855e771c1458887266aff84fda29a9e2f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d9f564fa_8bc2eb96",
+        "filename": "test/infrastructure/BeerStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:27:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8451566_1351bc8c",
       "revId": "d5d0527855e771c1458887266aff84fda29a9e2f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
