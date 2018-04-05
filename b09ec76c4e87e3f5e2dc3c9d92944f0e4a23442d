@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "eb71950d_e2300955",
+        "filename": "src/interactors/ListBeers.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T22:40:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3e3e54cf_e5c13560",
+      "revId": "b09ec76c4e87e3f5e2dc3c9d92944f0e4a23442d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a71c26d8_274d7da3",
         "filename": "src/services/BeerService.js",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-28T02:22:55Z",
       "side": 1,
       "message": "Simply `list` as everything will be related to beer",
+      "revId": "b09ec76c4e87e3f5e2dc3c9d92944f0e4a23442d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "12d63d5c_9c9420eb",
+        "filename": "src/services/BeerService.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T22:40:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a71c26d8_274d7da3",
       "revId": "b09ec76c4e87e3f5e2dc3c9d92944f0e4a23442d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
