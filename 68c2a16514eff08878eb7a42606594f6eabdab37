@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "aafe9081_9999aee5",
+        "filename": "src/infrastructure/KegStore.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:29:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f64a519_13673329",
+      "revId": "68c2a16514eff08878eb7a42606594f6eabdab37",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "778e5fc0_63919201",
         "filename": "test/infrastructure/KegStore.spec.js",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-28T02:14:12Z",
       "side": 1,
       "message": "0 instead of null",
+      "revId": "68c2a16514eff08878eb7a42606594f6eabdab37",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dc04531e_7c655908",
+        "filename": "test/infrastructure/KegStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:29:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "778e5fc0_63919201",
       "revId": "68c2a16514eff08878eb7a42606594f6eabdab37",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "6d053463_b4a0343d",
+        "filename": "test/infrastructure/KegStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:29:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "04e3e28d_bd44f33b",
+      "revId": "68c2a16514eff08878eb7a42606594f6eabdab37",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2c8bdfd7_76ec41cb",
         "filename": "test/infrastructure/KegStore.spec.js",
         "patchSetId": 4
@@ -64,6 +118,24 @@
       "writtenOn": "2018-03-28T02:14:12Z",
       "side": 1,
       "message": "\"count() equal to 0\"",
+      "revId": "68c2a16514eff08878eb7a42606594f6eabdab37",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "12514aaf_93dc246e",
+        "filename": "test/infrastructure/KegStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:29:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2c8bdfd7_76ec41cb",
       "revId": "68c2a16514eff08878eb7a42606594f6eabdab37",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
