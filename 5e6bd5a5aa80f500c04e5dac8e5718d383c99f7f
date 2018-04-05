@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1bd1a467_121c044a",
+        "filename": "src/infrastructure/ClientStore.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:03:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e6814fd0_3bf73292",
+      "revId": "5e6bd5a5aa80f500c04e5dac8e5718d383c99f7f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "69538534_b4fa8445",
         "filename": "test/infrastructure/ClientStore.spec.js",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-28T02:11:31Z",
       "side": 1,
       "message": "This should be 0 instead of null.",
+      "revId": "5e6bd5a5aa80f500c04e5dac8e5718d383c99f7f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "619d8f01_8948d905",
+        "filename": "test/infrastructure/ClientStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:03:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "69538534_b4fa8445",
       "revId": "5e6bd5a5aa80f500c04e5dac8e5718d383c99f7f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "b7b26d05_1ec99b2f",
+        "filename": "test/infrastructure/ClientStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:03:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ab510031_e35165c4",
+      "revId": "5e6bd5a5aa80f500c04e5dac8e5718d383c99f7f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d3888737_5ed979ed",
         "filename": "test/infrastructure/ClientStore.spec.js",
         "patchSetId": 4
@@ -64,6 +118,24 @@
       "writtenOn": "2018-03-28T02:11:31Z",
       "side": 1,
       "message": "\"if count is 0\"",
+      "revId": "5e6bd5a5aa80f500c04e5dac8e5718d383c99f7f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "11106da9_735b9e11",
+        "filename": "test/infrastructure/ClientStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T19:03:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d3888737_5ed979ed",
       "revId": "5e6bd5a5aa80f500c04e5dac8e5718d383c99f7f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
