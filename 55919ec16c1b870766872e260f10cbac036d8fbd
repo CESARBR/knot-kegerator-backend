@@ -16,6 +16,24 @@
       "revId": "55919ec16c1b870766872e260f10cbac036d8fbd",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bd5f5e03_049d29c1",
+        "filename": "src/infrastructure/TapBoundStore.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T02:09:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ada5ca7d_5afdeb82",
+      "revId": "55919ec16c1b870766872e260f10cbac036d8fbd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
