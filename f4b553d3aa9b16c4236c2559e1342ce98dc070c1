@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "d452025d_7dba18d2",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T01:46:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "de1f024d_64cb7e72",
+      "range": {
+        "startLine": 35,
+        "startChar": 4,
+        "endLine": 40,
+        "endChar": 7
+      },
+      "revId": "f4b553d3aa9b16c4236c2559e1342ce98dc070c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "38879931_3193f174",
         "filename": "test/infrastructure/CloudTapStore.spec.js",
         "patchSetId": 11
@@ -36,6 +60,24 @@
       "writtenOn": "2018-03-28T02:05:40Z",
       "side": 1,
       "message": "`getDataFromSensor` is an implementation detail, we should not specify (thinking of a test as an specification) that `CloudTapStore` should depend on it.\n\nInstead, we should specify how it interacts with the cloudConnection. Which operations on the cloudConnection will need to be held? In the test above you say that it will need to call update and below that it will can subscribe, what happens after?\n\nCan you create stubs on update/subscribe to resolve mimic what would happen like you did with `getDataFromSensor`?",
+      "revId": "f4b553d3aa9b16c4236c2559e1342ce98dc070c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "94089b0d_4a95a541",
+        "filename": "test/infrastructure/CloudTapStore.spec.js",
+        "patchSetId": 11
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-05T01:46:21Z",
+      "side": 1,
+      "message": "After refactoring CloudTapStore the `get` method only calls the CloudConnection `device` method, the test for this interaction is ok.\n\nIn the `getDataFromSensor` method, `subscribe` and `unsubscribe` don\u0027t return anything, so I resolve the Promises normally. Still, CloudConnection `update` method always return a result with the code 200, so I always resolve with this result.",
+      "parentUuid": "38879931_3193f174",
       "revId": "f4b553d3aa9b16c4236c2559e1342ce98dc070c1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
