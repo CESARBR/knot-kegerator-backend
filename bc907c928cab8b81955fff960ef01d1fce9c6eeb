@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "29570dae_e5607f2b",
+        "filename": "src/infrastructure/BeerSchema.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-06T11:55:22Z",
+      "side": 1,
+      "message": "This is used to eliminate the `_id` and `__v` fields of data returned from database.",
+      "parentUuid": "336bcda0_c6e267f3",
+      "revId": "bc907c928cab8b81955fff960ef01d1fce9c6eeb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b21b82cf_3093b6b6",
         "filename": "src/infrastructure/BeerStore.js",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-28T02:24:50Z",
       "side": 1,
       "message": "list",
+      "revId": "bc907c928cab8b81955fff960ef01d1fce9c6eeb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "66af9e2d_86f9880f",
+        "filename": "src/infrastructure/BeerStore.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-06T11:55:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b21b82cf_3093b6b6",
       "revId": "bc907c928cab8b81955fff960ef01d1fce9c6eeb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
