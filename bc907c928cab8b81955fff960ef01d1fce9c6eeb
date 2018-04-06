@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "011863d0_c23a2613",
+        "filename": "src/infrastructure/BeerSchema.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-06T12:05:49Z",
+      "side": 1,
+      "message": "Ignore my other comment. This is used to read the data from database as a pure javascript object.",
+      "parentUuid": "336bcda0_c6e267f3",
+      "revId": "bc907c928cab8b81955fff960ef01d1fce9c6eeb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b21b82cf_3093b6b6",
         "filename": "src/infrastructure/BeerStore.js",
         "patchSetId": 2
