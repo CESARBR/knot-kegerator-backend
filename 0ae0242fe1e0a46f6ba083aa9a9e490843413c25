@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "58d05d68_c75b851c",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 14
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-04-09T21:36:29Z",
+      "side": 1,
+      "message": "You could update the object you received above. Any reason to create another?",
+      "revId": "0ae0242fe1e0a46f6ba083aa9a9e490843413c25",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8c8795d_b3f5d426",
+        "filename": "test/interactors/SetupTap.spec.js",
+        "patchSetId": 14
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-04-09T21:36:29Z",
+      "side": 1,
+      "message": "I\u0027d would frame this in a more \"high level way\", something like \"updates tap if that doesn\u0027t have a current setup\". This way the test it is clearer what it is expected of this use case.\n\nWhen I read it the way it is, I had the felling that you were testing some implementation detail.",
+      "revId": "0ae0242fe1e0a46f6ba083aa9a9e490843413c25",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
