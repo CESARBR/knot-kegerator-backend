@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5e19d383_f40243db",
+        "filename": "src/interactors/ListClients.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-09T17:25:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9bf6407a_2295cbd0",
+      "revId": "1797b3f724c515ea5bc20d5fb850a408689cd201",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3b68ef9e_05d6d714",
         "filename": "src/services/ClientService.js",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-28T14:22:13Z",
       "side": 1,
       "message": "list",
+      "revId": "1797b3f724c515ea5bc20d5fb850a408689cd201",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b883d702_d967bb21",
+        "filename": "src/services/ClientService.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-09T17:25:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3b68ef9e_05d6d714",
       "revId": "1797b3f724c515ea5bc20d5fb850a408689cd201",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
