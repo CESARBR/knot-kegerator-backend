@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "8a6f67c6_ff081d11",
+        "filename": "src/infrastructure/ClientStore.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-09T18:48:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "55dca4a5_9a400fb8",
+      "revId": "8ec78766c407ef118d02109c79092cdc2c261566",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7d0bb284_74a0a43e",
         "filename": "src/infrastructure/ClientStore.js",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-28T14:23:01Z",
       "side": 1,
       "message": "`return await this....`",
+      "revId": "8ec78766c407ef118d02109c79092cdc2c261566",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f7a63a45_bc450a3c",
+        "filename": "src/infrastructure/ClientStore.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-09T18:48:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7d0bb284_74a0a43e",
       "revId": "8ec78766c407ef118d02109c79092cdc2c261566",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
