@@ -37,6 +37,23 @@
     },
     {
       "key": {
+        "uuid": "e8ecfb2a_8c154f2d",
+        "filename": "test/infrastructure/BeerStore.spec.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-04-09T22:29:49Z",
+      "side": 1,
+      "message": "0 instead of null",
+      "revId": "d5d0527855e771c1458887266aff84fda29a9e2f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ff06157_111bfd7c",
         "filename": "test/infrastructure/BeerStore.spec.js",
         "patchSetId": 4
