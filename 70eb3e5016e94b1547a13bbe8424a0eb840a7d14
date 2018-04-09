@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "2b20fba4_ed81c3b4",
+        "filename": "src/interactors/ListTaps.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-09T20:15:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8e99c10f_efe8162c",
+      "revId": "70eb3e5016e94b1547a13bbe8424a0eb840a7d14",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "051aea11_ffb0941a",
         "filename": "src/services/TapService.js",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-28T14:24:55Z",
       "side": 1,
       "message": "list",
+      "revId": "70eb3e5016e94b1547a13bbe8424a0eb840a7d14",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8781a589_004458cb",
+        "filename": "src/services/TapService.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-09T20:15:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "051aea11_ffb0941a",
       "revId": "70eb3e5016e94b1547a13bbe8424a0eb840a7d14",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
