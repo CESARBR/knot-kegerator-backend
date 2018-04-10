@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "be148c85_f33f6dde",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-10T13:56:24Z",
+      "side": 1,
+      "message": "Yes. I put bound to differentiate because tap store was the name of database store before, but this doesn\u0027t make sense now.",
+      "parentUuid": "9b2e9c94_cf180211",
+      "revId": "60ce27b812c33d68bd3631f510106d31dafcbbe1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "464b5fde_d3b3c557",
         "filename": "test/infrastructure/TapStore.spec.js",
         "patchSetId": 3
@@ -30,6 +48,30 @@
       "writtenOn": "2018-04-09T22:26:18Z",
       "side": 1,
       "message": "These are implementation details. While we expect that it calls get() on the database store, in another valid implementation the database store could fetch beer and keg data by itself.\n\nI think we can remove these tests.",
+      "range": {
+        "startLine": 152,
+        "startChar": 0,
+        "endLine": 208,
+        "endChar": 2
+      },
+      "revId": "60ce27b812c33d68bd3631f510106d31dafcbbe1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b1a22e8c_eab84ddf",
+        "filename": "test/infrastructure/TapStore.spec.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-10T13:56:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "464b5fde_d3b3c557",
       "range": {
         "startLine": 152,
         "startChar": 0,
