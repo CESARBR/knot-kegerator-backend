@@ -22,6 +22,30 @@
       "revId": "c972e1ee0ba1ed1d9cf1c8aa77ffdd8e1449f2cb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "66a2411c_5f6c8050",
+        "filename": "test/infrastructure/CloudTapStore.spec.js",
+        "patchSetId": 12
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-10T13:08:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e3f53497_d742b1cb",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 125,
+        "endChar": 2
+      },
+      "revId": "c972e1ee0ba1ed1d9cf1c8aa77ffdd8e1449f2cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
