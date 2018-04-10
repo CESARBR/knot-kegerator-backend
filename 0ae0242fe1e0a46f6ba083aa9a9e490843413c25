@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "bd33d668_670f52b5",
+        "filename": "src/interactors/SetupTap.js",
+        "patchSetId": 14
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-10T12:31:24Z",
+      "side": 1,
+      "message": "There is a case where setup is still undefined. Is there any better way to set the property without having trouble with it?",
+      "parentUuid": "58d05d68_c75b851c",
+      "revId": "0ae0242fe1e0a46f6ba083aa9a9e490843413c25",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c8c8795d_b3f5d426",
         "filename": "test/interactors/SetupTap.spec.js",
         "patchSetId": 14
@@ -30,6 +48,24 @@
       "writtenOn": "2018-04-09T21:36:29Z",
       "side": 1,
       "message": "I\u0027d would frame this in a more \"high level way\", something like \"updates tap if that doesn\u0027t have a current setup\". This way the test it is clearer what it is expected of this use case.\n\nWhen I read it the way it is, I had the felling that you were testing some implementation detail.",
+      "revId": "0ae0242fe1e0a46f6ba083aa9a9e490843413c25",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "58addcea_ea5b24ef",
+        "filename": "test/interactors/SetupTap.spec.js",
+        "patchSetId": 14
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-04-10T12:31:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c8c8795d_b3f5d426",
       "revId": "0ae0242fe1e0a46f6ba083aa9a9e490843413c25",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
