@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "53a4f2c2_748b4a4a",
+        "filename": "package.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-12-12T23:00:37Z",
+      "side": 1,
+      "message": "I think fs already comes with node, doesn\u0027t it?",
+      "revId": "d8cb50fcd5a4010ab048dd5effe3d7407c53490f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5b64b3ae_a221f462",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-12-12T23:00:37Z",
+      "side": 1,
+      "message": "list",
+      "revId": "d8cb50fcd5a4010ab048dd5effe3d7407c53490f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "70fd419a_9727522e",
+        "filename": "src/infrastructure/CloudTapStore.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-12-12T23:00:37Z",
+      "side": 1,
+      "message": "Instead of reading this file, ain\u0027t it simpler if we implement the actual call to the cloud?",
+      "revId": "d8cb50fcd5a4010ab048dd5effe3d7407c53490f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
